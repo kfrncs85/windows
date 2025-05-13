@@ -61,12 +61,6 @@
       </DiskConfiguration>
       <ImageInstall>
         <OSImage>
-          <InstallFrom>
-            <MetaData wcm:action="add">
-              <Value>Windows 8.1 Pro</Value>
-              <Key>/IMAGE/NAME</Key>
-            </MetaData>
-          </InstallFrom>
           <InstallTo>
             <DiskID>0</DiskID>
             <PartitionID>3</PartitionID>
@@ -86,10 +80,6 @@
         <AcceptEula>true</AcceptEula>
         <FullName>Docker</FullName>
         <Organization>Windows for Docker</Organization>
-        <ProductKey>
-          <Key>GCRJD-8NW9H-F2CDX-CCM8D-9D6T9</Key>
-          <WillShowUI>OnError</WillShowUI>
-        </ProductKey>
       </UserData>
       <EnableFirewall>false</EnableFirewall>
       <Diagnostics>

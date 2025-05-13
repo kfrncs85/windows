@@ -8,6 +8,7 @@
       <InputLocale>0409:00000409</InputLocale>
       <SystemLocale>en-US</SystemLocale>
       <UILanguage>en-US</UILanguage>
+      <UILanguageFallback>en-US</UILanguageFallback>
       <UserLocale>en-US</UserLocale>
     </component>
     <component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -63,14 +64,15 @@
         <OSImage>
           <InstallFrom>
             <MetaData wcm:action="add">
-              <Value>Windows 8.1 Pro</Value>
-              <Key>/IMAGE/NAME</Key>
+              <Key>/image/index</Key>
+              <Value>2</Value>
             </MetaData>
           </InstallFrom>
           <InstallTo>
             <DiskID>0</DiskID>
             <PartitionID>3</PartitionID>
           </InstallTo>
+          <WillShowUI>OnError</WillShowUI>
           <InstallToAvailablePartition>false</InstallToAvailablePartition>
         </OSImage>
       </ImageInstall>
@@ -87,8 +89,7 @@
         <FullName>Docker</FullName>
         <Organization>Windows for Docker</Organization>
         <ProductKey>
-          <Key>GCRJD-8NW9H-F2CDX-CCM8D-9D6T9</Key>
-          <WillShowUI>OnError</WillShowUI>
+          <Key>D2N9P-3P6X9-2R39C-7RTCD-MDVJX</Key>
         </ProductKey>
       </UserData>
       <EnableFirewall>false</EnableFirewall>
@@ -147,6 +148,7 @@
       <InputLocale>0409:00000409</InputLocale>
       <SystemLocale>en-US</SystemLocale>
       <UILanguage>en-US</UILanguage>
+      <UILanguageFallback>en-US</UILanguageFallback>
       <UserLocale>en-US</UserLocale>
     </component>
     <component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -157,6 +159,12 @@
           <Description>Set Network Location to Home</Description>
         </RunSynchronousCommand>
       </RunSynchronous>
+    </component>
+    <component name="Microsoft-Windows-ServerManager-SvrMgrNc" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+      <DoNotOpenServerManagerAtLogon>true</DoNotOpenServerManagerAtLogon>
+    </component>
+    <component name="Microsoft-Windows-OutOfBoxExperience" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+      <DoNotOpenInitialConfigurationTasksAtLogon>true</DoNotOpenInitialConfigurationTasksAtLogon>
     </component>
     <component name="Microsoft-Windows-TerminalServices-LocalSessionManager" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
       <fDenyTSConnections>false</fDenyTSConnections>
